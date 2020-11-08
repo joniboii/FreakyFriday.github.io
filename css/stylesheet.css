@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #744e33;
+    text-align: center;
+    color: #ffffff;
+}
+
+.noSelect {
+    -webkit-user-select: none;        
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.wrapper {
+    width: 11700;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+
+.banner {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(../imgaes/food_image1_banner.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.banner h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-color: #744e33;
+    height: 1500px;
+}
+
+.content h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.content p {
+    padding: 2% 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 25px;
+    font-size: large;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #262626;
+    border: none;
+    color: white;
+    padding: 25px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 50px 2px;
+}
+
+.container {
+    width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: wheat;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img {
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+.container .box:hover .imgBox img {
+    transform: scale(1.05);
+}
+
+.container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(168, 67, 55, 0.3);
+}
